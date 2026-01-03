@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Industry", name: "industry", widget: "string"}
+      - {label: "Materials", name: "materials", widget: "string"}
+      - {label: "Display Type", name: "type", widget: "string"}
+      - {label: "Client", name: "client", widget: "string", required: false}
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: true}
+      - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Sketches", name: "sketches", widget: "list", field: {label: "Image", name: "image", widget: "image"}, required: false}
+      - {label: "Execution Photos", name: "photos", widget: "list", field: {label: "Image", name: "image", widget: "image"}, required: false}
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Site Configuration"
+        name: "config"
+        file: "content/settings/config.json"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "Site Description", name: "description", widget: "text"}
+          - {label: "Logo", name: "logo", widget: "image", required: false}
+          - {label: "Logo Dark Mode", name: "logoDark", widget: "image", required: false}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
+          - {label: "Show Logo or Text", name: "showLogo", widget: "boolean", default: false}
+      
+      - label: "About Page"
+        name: "about"
+        file: "content/settings/about.json"
+        fields:
+          - {label: "Bio Content", name: "bio", widget: "markdown"}

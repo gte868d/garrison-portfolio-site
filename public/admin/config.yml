@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: gte868d/garrison-portfolio-site
   branch: main
 
 media_folder: "public/images"

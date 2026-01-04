@@ -9,7 +9,7 @@
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
-    // Redirect to home if logged in
+    // Fix for Netlify Identity redirects
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
@@ -18,6 +18,15 @@
           });
         }
       });
+    }
+    
+    // Handle email confirmation redirects
+    if (window.location.hash) {
+      const hash = window.location.hash;
+      if (hash.includes('confirmation_token') || hash.includes('recovery_token') || hash.includes('invite_token')) {
+        // Keep user on admin page instead of redirecting to home
+        window.history.replaceState(null, null, window.location.pathname);
+      }
     }
   </script>
 </body>

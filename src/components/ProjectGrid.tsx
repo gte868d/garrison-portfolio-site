@@ -21,7 +21,7 @@ const projects = [
     image: '/images/projects/dometic-hero.jpg',
   },
   {
-    id: 'korr',
+    id: 'korr-cardio-coach',
     title: 'KORR Cardio Coach',
     industry: 'Medical & Fitness',
     materials: 'Sheet Metal, Acrylic',
@@ -29,7 +29,7 @@ const projects = [
     image: '/images/projects/korr-hero.jpg',
   },
   {
-    id: 'leer',
+    id: 'leer-tonneau-covers',
     title: 'Leer Tonneau Covers',
     industry: 'Automotive Aftermarket',
     materials: 'Vacuum-Formed Plastic',
@@ -37,7 +37,7 @@ const projects = [
     image: '/images/projects/leer-hero.jpg',
   },
   {
-    id: 'trex',
+    id: 'trex-decking-bay',
     title: 'Trex Decking Bay System',
     industry: 'Home Improvement',
     materials: 'Composite, Steel, Print',
@@ -45,7 +45,7 @@ const projects = [
     image: '/images/projects/trex-hero.jpg',
   },
   {
-    id: 'atlas',
+    id: 'atlas-trade-show',
     title: 'Atlas Trade Show Graphics',
     industry: 'Building Materials',
     materials: 'Large-Format Print',
@@ -53,7 +53,7 @@ const projects = [
     image: '/images/projects/atlas-hero.jpg',
   },
   {
-    id: 'delta',
+    id: 'delta-faucet-display',
     title: 'Delta Faucet Display',
     industry: 'Home Improvement',
     materials: 'Corrugated, Digital Print',
@@ -61,7 +61,7 @@ const projects = [
     image: '/images/projects/delta-hero.jpg',
   },
   {
-    id: 'one-wake',
+    id: 'one-wake-store',
     title: 'One Wake Store Concept',
     industry: 'Retail & Spatial',
     materials: 'Environmental Graphics',

@@ -53,6 +53,17 @@ async function getProject(slug: string): Promise<Project | null> {
   }
 }
 
+export async function generateStaticParams() {
+  const projectsDirectory = path.join(process.cwd(), 'content/projects')
+  const filenames = fs.readdirSync(projectsDirectory)
+  
+  return filenames
+    .filter(filename => filename.endsWith('.md'))
+    .map(filename => ({
+      slug: filename.replace('.md', ''),
+    }))
+}
+
 export default async function ProjectPage({ params }: { params: { slug: string } }) {
   const project = await getProject(params.slug)
   

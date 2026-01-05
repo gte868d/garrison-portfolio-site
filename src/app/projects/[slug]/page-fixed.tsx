@@ -5,7 +5,22 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 
-async function getProject(slug: string) {
+interface Project {
+  title: string
+  industry: string
+  materials: string
+  type: string
+  client?: string
+  year?: string
+  featured?: boolean
+  heroImage?: string
+  sketches?: Array<{ image: string }>
+  photos?: Array<{ image: string }>
+  content: string
+  slug: string
+}
+
+async function getProject(slug: string): Promise<Project | null> {
   try {
     const projectsDirectory = path.join(process.cwd(), 'content/projects')
     const filePath = path.join(projectsDirectory, `${slug}.md`)
@@ -20,8 +35,17 @@ async function getProject(slug: string) {
     const htmlContent = marked(content)
     
     return {
-      ...data,
-      content: htmlContent,
+      title: data.title as string,
+      industry: data.industry as string,
+      materials: data.materials as string,
+      type: data.type as string,
+      client: data.client as string | undefined,
+      year: data.year as string | undefined,
+      featured: data.featured as boolean | undefined,
+      heroImage: data.heroImage as string | undefined,
+      sketches: data.sketches as Array<{ image: string }> | undefined,
+      photos: data.photos as Array<{ image: string }> | undefined,
+      content: htmlContent as string,
       slug,
     }
   } catch (error) {

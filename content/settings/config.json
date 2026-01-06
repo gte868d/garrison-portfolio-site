@@ -4,6 +4,6 @@
   "email": "garrison.brooks@gmail.com",
   "linkedin": "https://linkedin.com/in/garrisonbrooks",
   "showLogo": false,
-  "logo": "https://ythoklfmhdhszxyutybb.supabase.co/storage/v1/object/public/Garrison%20Brooks/gblogo.svg",
-  "logoDark": "https://ythoklfmhdhszxyutybb.supabase.co/storage/v1/object/public/Garrison%20Brooks/gblogo.svg"
+  "logo": "/images/gblogo.svg",
+  "logoDark": "/images/gblogo.svg"
 }

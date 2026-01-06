@@ -1,6 +1,8 @@
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import fs from 'fs'
+import path from 'path'
 
 export const metadata = {
   title: 'Garrison Brooks | Industrial Designer',
@@ -14,16 +16,32 @@ export const metadata = {
   },
 }
 
+function getSettings() {
+  try {
+    const settingsPath = path.join(process.cwd(), 'content/settings/config.json')
+    const settingsData = fs.readFileSync(settingsPath, 'utf8')
+    return JSON.parse(settingsData)
+  } catch (error) {
+    return {}
+  }
+}
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const settings = getSettings()
+  
   return (
     <html lang="en">
       <body className="font-sans">
         <div className="grain-texture min-h-screen bg-gradient-mesh">
-          <Navigation />
+          <Navigation 
+            logo={settings.logo} 
+            logoDark={settings.logoDark}
+            showLogo={settings.showLogo}
+          />
           <main>{children}</main>
           <Footer />
         </div>

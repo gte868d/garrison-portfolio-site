@@ -1,14 +1,9 @@
 {
-  "title": "Garrison Brooks | Industrial Designer",
-  "description": "Fast ideation. Deep exploration. Solutions that ship. 20 years solving how products meet consumers through systematic design thinking and AI-integrated workflows.",
-  "email": "garrison.brooks@gmail.com",
-  "linkedin": "https://linkedin.com/in/garrisonbrooks",
+  "logo": "/images/gblogo.svg",
+  "logoDark": "/images/gblogo.svg",
   "showLogo": true,
-<<<<<<< HEAD
-  "logo": "/images/gblogo.png",
-  "logoDark": "/images/gblogo.png"
-=======
-  "logo": "https://ythoklfmhdhszxyutybb.supabase.co/storage/v1/object/public/Garrison%20Brooks/gblogo.svg",
-  "logoDark": "https://ythoklfmhdhszxyutybb.supabase.co/storage/v1/object/public/Garrison%20Brooks/gblogo.svg"
->>>>>>> parent of ef7b41c (Update Site Settings “config”)
+  "title": "Garrison Brooks industrial Design",
+  "description": "The portfolio site of Garrison Brooks, Industrial Designer",
+  "email": "garrison.brooks@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/garrisonbrooks"
 }

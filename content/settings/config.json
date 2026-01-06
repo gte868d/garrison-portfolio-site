@@ -4,6 +4,11 @@
   "email": "garrison.brooks@gmail.com",
   "linkedin": "https://linkedin.com/in/garrisonbrooks",
   "showLogo": true,
+<<<<<<< HEAD
   "logo": "/images/gblogo.png",
   "logoDark": "/images/gblogo.png"
+=======
+  "logo": "https://ythoklfmhdhszxyutybb.supabase.co/storage/v1/object/public/Garrison%20Brooks/gblogo.svg",
+  "logoDark": "https://ythoklfmhdhszxyutybb.supabase.co/storage/v1/object/public/Garrison%20Brooks/gblogo.svg"
+>>>>>>> parent of ef7b41c (Update Site Settings “config”)
 }

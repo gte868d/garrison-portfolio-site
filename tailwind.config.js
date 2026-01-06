@@ -8,15 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary-dark': '#2D1B4E',
-        'primary': '#4B0082',
-        'primary-light': '#667eea',
-        'background': '#1A1D23',
-        'surface': '#2A2D34',
-        'text-light': '#F7F4EF',
-        'text-dim': '#C4B8A9',
-        'accent': '#B87333',
-        'accent-glow': '#D4AF37',
+        'primary-dark': '#1a1f1a',      // Very dark charcoal with green hint
+        'primary': '#2a3329',            // Dark charcoal
+        'primary-light': '#7FB800',      // Your logo green
+        'background': '#0f1110',         // Almost black
+        'surface': '#1a1f1a',            // Charcoal surface
+        'text-light': '#F7F4EF',         // Off-white text
+        'text-dim': '#9ca3af',           // Gray text
+        'accent': '#7FB800',             // Your logo green
+        'accent-glow': '#a3d900',        // Brighter green for hover
       },
       fontFamily: {
         sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
@@ -24,7 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-mesh': 'radial-gradient(at 40% 20%, #4B0082 0%, transparent 50%), radial-gradient(at 80% 0%, #2D1B4E 0%, transparent 50%), radial-gradient(at 0% 50%, #667eea 0%, transparent 50%), radial-gradient(at 80% 50%, #1A1D23 0%, transparent 50%)',
+        'gradient-mesh': 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(127, 184, 0, 0.15), transparent), radial-gradient(ellipse 60% 50% at 0% 50%, rgba(42, 51, 41, 0.3), transparent), radial-gradient(ellipse 60% 50% at 100% 80%, rgba(127, 184, 0, 0.1), transparent)',
       },
     },
   },

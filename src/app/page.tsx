@@ -1,6 +1,23 @@
 import ProjectGrid from '@/components/ProjectGrid'
+import fs from 'fs'
+import path from 'path'
+
+function getSettings() {
+  try {
+    const settingsPath = path.join(process.cwd(), 'content/settings/config.json')
+    const settingsData = fs.readFileSync(settingsPath, 'utf8')
+    return JSON.parse(settingsData)
+  } catch (error) {
+    return {
+      title: 'Garrison Brooks | Industrial Designer',
+      description: 'Fast ideation. Deep exploration. Solutions that ship. 20 years solving how products meet consumers through systematic design thinking and AI-integrated workflows.'
+    }
+  }
+}
 
 export default function Home() {
+  const settings = getSettings()
+  
   return (
     <>
       {/* Hero Section */}
@@ -13,8 +30,7 @@ export default function Home() {
           </h1>
           
           <p className="text-xl md:text-2xl text-text-dim mb-12 max-w-2xl mx-auto">
-            20 years solving how products meet consumers through systematic design thinking 
-            and AI-integrated workflows.
+            {settings.description}
           </p>
           
           <a href="#projects" 

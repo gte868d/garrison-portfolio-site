@@ -19,27 +19,51 @@ function getProjects(): Project[] {
     const projectsDirectory = path.join(process.cwd(), 'content/projects')
     const filenames = fs.readdirSync(projectsDirectory)
     
-    const projects = filenames
+    // Load project order from settings
+    let projectOrder: string[] = []
+    try {
+      const orderPath = path.join(process.cwd(), 'content/settings/project-order.json')
+      const orderData = fs.readFileSync(orderPath, 'utf8')
+      const orderJson = JSON.parse(orderData)
+      projectOrder = orderJson.order || []
+    } catch (error) {
+      console.log('No project order file found, using default order')
+    }
+    
+    // Load all projects into a map
+    const projectMap = new Map<string, Project>()
+    
+    filenames
       .filter(filename => filename.endsWith('.md'))
-      .map(filename => {
+      .forEach(filename => {
+        const slug = filename.replace('.md', '')
         const filePath = path.join(projectsDirectory, filename)
         const fileContents = fs.readFileSync(filePath, 'utf8')
         const { data } = matter(fileContents)
         
-        return {
-          id: filename.replace('.md', ''),
+        projectMap.set(slug, {
+          id: slug,
           title: data.title || 'Untitled Project',
           industry: data.industry || '',
           materials: data.materials || '',
           type: data.type || '',
           heroImage: data.heroImage,
-          featured: data.featured !== false, // Default to true
-        }
+          featured: data.featured !== false,
+        })
       })
-      .filter(project => project.featured) // Only show featured projects
-      .slice(0, 8) // Limit to 8 projects
     
-    return projects
+    // If we have a project order, use it
+    if (projectOrder.length > 0) {
+      return projectOrder
+        .map(slug => projectMap.get(slug))
+        .filter(project => project && project.featured) as Project[]
+    }
+    
+    // Otherwise, show all featured projects
+    return Array.from(projectMap.values())
+      .filter(project => project.featured)
+      .slice(0, 8)
+    
   } catch (error) {
     console.error('Error loading projects:', error)
     return []

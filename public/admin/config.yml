@@ -55,3 +55,13 @@ collections:
         file: "content/settings/about.json"
         fields:
           - {label: "Bio Content", name: "bio", widget: "markdown"}
+      
+      - label: "Project Order"
+        name: "projectOrder"
+        file: "content/settings/project-order.json"
+        fields:
+          - label: "Project Order"
+            name: "order"
+            widget: "list"
+            hint: "Drag to reorder projects on homepage. Only projects listed here will appear."
+            field: {label: "Project Slug", name: "slug", widget: "string"}

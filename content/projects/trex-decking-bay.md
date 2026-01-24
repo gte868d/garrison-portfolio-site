@@ -1,11 +1,17 @@
 ---
-title: "Trex Decking Bay System"
-industry: "Home Improvement"
-materials: "Composite decking samples, powder-coated steel, UV-printed graphics"
-type: "9-foot retail bay system"
-client: "Trex Company"
+title: Trex Decking Bay System
+industry: Home Improvement
+materials: Composite decking samples, powder-coated steel, UV-printed graphics
+type: 9-foot retail bay system
+client: Trex Company
 year: "2024"
 featured: true
+heroImage: /images/trex_sketches_717_0003_v3-copy-5.jpg
+sketches:
+  - image: /images/trex_sketches_717_0004_v8-copy.jpg
+  - image: /images/trex_sketches_717_0005_v10-copy.jpg
+  - image: /images/trex_sketches_717_0002_v2-copy-3.jpg
+  - image: /images/trex_sketches_717_0001_v1-copy-3.jpg
 ---
 
 ## Project Overview

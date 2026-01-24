@@ -1,11 +1,21 @@
 ---
-title: "KORR Cardio Coach"
-industry: "Medical & Fitness"
-materials: "Sheet metal, powder-coated steel, acrylic, digital graphics"
-type: "Product housing & retail display"
-client: "KORR Medical Technologies"
+title: KORR Cardio Coach
+industry: Medical & Fitness
+materials: Sheet metal, powder-coated steel, acrylic, digital graphics
+type: Product housing & retail display
+client: KORR Medical Technologies
 year: "2024"
 featured: true
+heroImage: /images/screenshot-2026-01-24-at-2.13.07 pm.png
+sketches:
+  - image: /images/korr_cardio_coach_initial_ideation_1-17-24b-01.jpg
+  - image: /images/korr_cardio_coach_initial_ideation_1-17-24b-02.jpg
+  - image: /images/korr_cardio_coach_initial_ideation_1-17-24b-03.jpg
+photos:
+  - image: /images/img_3688.jpeg
+  - image: /images/img_3687.jpeg
+  - image: /images/screenshot-2026-01-24-at-2.14.04 pm.png
+  - image: /images/img_3629.jpeg
 ---
 
 ## Project Overview

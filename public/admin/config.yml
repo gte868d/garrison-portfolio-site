@@ -22,8 +22,18 @@ collections:
       - {label: "Featured", name: "featured", widget: "boolean", default: true}
       - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Sketches", name: "sketches", widget: "list", field: {label: "Image", name: "image", widget: "image"}, required: false}
-      - {label: "Execution Photos", name: "photos", widget: "list", field: {label: "Image", name: "image", widget: "image"}, required: false}
+      - label: "Sketches"
+        name: "sketches"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
+      - label: "Execution Photos"
+        name: "photos"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
 
   - name: "settings"
     label: "Site Settings"

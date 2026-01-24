@@ -8,19 +8,19 @@ year: "2025"
 featured: true
 heroImage: /images/b38bea86-e5d2-4789-9248-5358e296cbbf.jpg
 sketches:
-  - /images/carv_ski_boot_sensor_disp-4-23_page_1.jpg
-  - /images/carv_ski_boot_sensor_disp-4-23_page_2.jpg
-  - /images/carv_ski_boot_sensor_disp-4-23_page_3.jpg
-  - /images/carv_ski_boot_sensor_disp_rev_5-1b_page_1.jpg
-  - /images/carv_ski_boot_sensor_disp_rev_5-1b_page_2.jpg
-  - /images/carv_ski_boot_sensor_disp_rev_5-1b_page_3.jpg
+  - image: /images/carv_ski_boot_sensor_disp-4-23_page_1.jpg
+  - image: /images/carv_ski_boot_sensor_disp-4-23_page_2.jpg
+  - image: /images/carv_ski_boot_sensor_disp-4-23_page_3.jpg
+  - image: /images/carv_ski_boot_sensor_disp_rev_5-1b_page_1.jpg
+  - image: /images/carv_ski_boot_sensor_disp_rev_5-1b_page_2.jpg
+  - image: /images/carv_ski_boot_sensor_disp_rev_5-1b_page_3.jpg
 photos:
-  - /images/screenshot-2026-01-24-at-2.09.46 pm.png
-  - /images/screenshot-2026-01-24-at-2.11.39 pm.png
-  - /images/screenshot-2026-01-24-at-2.11.25 pm.png
-  - /images/screenshot-2026-01-24-at-2.10.18 pm.png
-  - /images/screenshot-2026-01-24-at-2.10.01 pm.png
-  - /images/screenshot-2026-01-24-at-1.58.34 pm.png
+  - image: /images/screenshot-2026-01-24-at-2.09.46 pm.png
+  - image: /images/screenshot-2026-01-24-at-2.11.39 pm.png
+  - image: /images/screenshot-2026-01-24-at-2.11.25 pm.png
+  - image: /images/screenshot-2026-01-24-at-2.10.18 pm.png
+  - image: /images/screenshot-2026-01-24-at-2.10.01 pm.png
+  - image: /images/screenshot-2026-01-24-at-1.58.34 pm.png
 ---
 
 ## Project Overview

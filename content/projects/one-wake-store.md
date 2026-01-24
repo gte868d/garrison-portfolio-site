@@ -6,6 +6,7 @@ type: Store planning & concept development
 client: One Wake
 year: "2023"
 featured: true
+heroImage: /images/onewake_wm_318_0005_v1_with_rafts_inscene-copy.jpg
 sketches:
   - image: /images/onewake_in_west_marine_sketches_3-6_0000_v1.jpg
   - image: /images/onewake_in_west_marine_sketches_3-6_0002_v2.jpg

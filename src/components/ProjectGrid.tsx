@@ -76,7 +76,7 @@ function ProjectCard({ project }: { project: Project }) {
       href={`/projects/${project.id}`}
       className="block group"
     >
-      <div className="relative rounded-xl overflow-hidden card-hover bg-surface aspect-[4/5]">
+      <div className="relative rounded-2xl overflow-hidden card-hover aspect-[4/5]">
         {/* Project Image or Placeholder */}
         {project.heroImage ? (
           <div className="absolute inset-0">
@@ -84,40 +84,51 @@ function ProjectCard({ project }: { project: Project }) {
               src={project.heroImage}
               alt={project.title}
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
-            {/* Gradient overlay for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+            {/* Stronger gradient overlay for better text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
           </div>
         ) : (
           // Placeholder gradient if no image
-          <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center">
-            <div className="text-6xl font-bold text-white opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/10 flex items-center justify-center">
+            <div className="text-8xl font-bold text-white/5">
               {project.title.charAt(0)}
             </div>
           </div>
         )}
         
-        {/* Info Overlay - Always visible at bottom */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background to-transparent z-10">
-          <h3 className="text-xl font-serif font-bold mb-2">{project.title}</h3>
+        {/* Info Overlay - Clean, Always Visible */}
+        <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
+          {/* Industry tag at top */}
+          <div className="mb-auto pt-4">
+            <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase bg-accent/20 text-accent backdrop-blur-sm rounded-full">
+              {project.industry}
+            </span>
+          </div>
           
-          {/* Expanded info on hover */}
-          <div className="transition-all duration-300 opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-40 overflow-hidden">
-            <div className="glass-morphism rounded-lg p-4 mt-2 space-y-1 text-sm">
-              <div className="flex justify-between">
-                <span className="text-text-dim">Industry:</span>
-                <span className="font-semibold">{project.industry}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-text-dim">Materials:</span>
-                <span className="font-semibold">{project.materials}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-text-dim">Type:</span>
-                <span className="font-semibold">{project.type}</span>
-              </div>
+          {/* Project info at bottom */}
+          <div className="space-y-3">
+            <h3 className="text-2xl font-serif font-bold leading-tight text-white">
+              {project.title}
+            </h3>
+            
+            <div className="space-y-1.5">
+              <p className="text-sm text-gray-300 leading-relaxed">
+                {project.type}
+              </p>
+              <p className="text-xs text-gray-400 leading-relaxed">
+                {project.materials}
+              </p>
+            </div>
+            
+            {/* View project hint */}
+            <div className="flex items-center gap-2 text-accent text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+              <span>View Project</span>
+              <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </div>
         </div>

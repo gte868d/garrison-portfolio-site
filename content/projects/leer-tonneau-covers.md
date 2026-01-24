@@ -1,11 +1,19 @@
 ---
-title: "Leer Tonneau Covers Display"
-industry: "Automotive Aftermarket"
-materials: "Vacuum-formed plastic, powder-coated steel, UV-printed graphics"
-type: "Retail display system"
-client: "Leer"
+title: Leer Tonneau Covers Display
+industry: Automotive Aftermarket
+materials: Vacuum-formed plastic, powder-coated steel, UV-printed graphics
+type: Retail display system
+client: Leer
 year: "2023"
 featured: true
+heroImage: /images/img_6361.jpeg
+sketches:
+  - image: /images/leer_mini_bed_cover_display_8-11-01.png
+  - image: /images/leer_mini_bed_cover_display_8-11-02.png
+  - image: /images/leer_mini_bed_cover_display_8-11-03.png
+photos:
+  - image: /images/screenshot-2026-01-24-at-2.16.22 pm.png
+  - image: /images/screenshot-2026-01-24-at-2.16.35 pm.png
 ---
 
 ## Project Overview

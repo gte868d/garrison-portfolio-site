@@ -1,11 +1,12 @@
 ---
-title: "Carv 2 Ski Technology Display"
-industry: "Sports & Recreation"
-materials: "Acrylic, powder-coated steel, LED lighting"
-type: "Interactive retail display"
-client: "Crux Retail for Carv"
+title: Carv 2 Ski Technology Display
+industry: Sports & Recreation
+materials: Acrylic, powder-coated steel, LED lighting
+type: Interactive retail display
+client: Crux Retail for Carv
 year: "2025"
 featured: true
+heroImage: /images/b38bea86-e5d2-4789-9248-5358e296cbbf.jpg
 ---
 
 ## Project Overview

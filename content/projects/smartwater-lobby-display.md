@@ -1,5 +1,5 @@
 ---
-title: smartwater® lobby display
+title: smartwater lobby display
 industry: Beverage
 materials: Corrugated Fiberboard, Motion-Activated LED Light Kit
 type: Temporary Promotional Display Bridge

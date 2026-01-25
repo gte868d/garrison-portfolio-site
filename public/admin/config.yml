@@ -50,18 +50,18 @@ collections:
           - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
           - {label: "Show Logo or Text", name: "showLogo", widget: "boolean", default: false}
       
+      - label: "Homepage Hero"
+        name: "hero"
+        file: "content/settings/hero.json"
+        fields:
+          - {label: "Headline Line 1", name: "headline1", widget: "string", default: "Fast ideation."}
+          - {label: "Headline Line 2", name: "headline2", widget: "string", default: "Deep exploration."}
+          - {label: "Headline Line 3 (Highlighted)", name: "headline3", widget: "string", default: "Solutions that ship."}
+          - {label: "Subheadline", name: "subheadline", widget: "text", default: "20 years solving how products meet consumers through systematic design thinking and AI-integrated workflows."}
+          - {label: "Button Text", name: "buttonText", widget: "string", default: "Explore Work"}
+      
       - label: "About Page"
         name: "about"
         file: "content/settings/about.json"
         fields:
           - {label: "Bio Content", name: "bio", widget: "markdown"}
-      
-      - label: "Project Order"
-        name: "projectOrder"
-        file: "content/settings/project-order.json"
-        fields:
-          - label: "Project Order"
-            name: "order"
-            widget: "list"
-            hint: "Drag to reorder projects on homepage. Only projects listed here will appear."
-            field: {label: "Project Slug", name: "slug", widget: "string"}

@@ -2,21 +2,24 @@ import ProjectGrid from '@/components/ProjectGrid'
 import fs from 'fs'
 import path from 'path'
 
-function getSettings() {
+function getHeroContent() {
   try {
-    const settingsPath = path.join(process.cwd(), 'content/settings/config.json')
-    const settingsData = fs.readFileSync(settingsPath, 'utf8')
-    return JSON.parse(settingsData)
+    const heroPath = path.join(process.cwd(), 'content/settings/hero.json')
+    const heroData = fs.readFileSync(heroPath, 'utf8')
+    return JSON.parse(heroData)
   } catch (error) {
     return {
-      title: 'Garrison Brooks | Industrial Designer',
-      description: 'Fast ideation. Deep exploration. Solutions that ship. 20 years solving how products meet consumers through systematic design thinking and AI-integrated workflows.'
+      headline1: 'Fast ideation.',
+      headline2: 'Deep exploration.',
+      headline3: 'Solutions that ship.',
+      subheadline: '20 years solving how products meet consumers through systematic design thinking and AI-integrated workflows.',
+      buttonText: 'Explore Work'
     }
   }
 }
 
 export default function Home() {
-  const settings = getSettings()
+  const hero = getHeroContent()
   
   return (
     <>
@@ -24,20 +27,20 @@ export default function Home() {
       <section className="min-h-screen flex items-center justify-center px-6 pt-20">
         <div className="max-w-4xl text-center">
           <h1 className="text-6xl md:text-8xl font-serif font-bold mb-6 leading-tight">
-            Fast ideation.<br />
-            Deep exploration.<br />
-            <span className="text-gradient">Solutions that ship.</span>
+            {hero.headline1}<br />
+            {hero.headline2}<br />
+            <span className="text-gradient">{hero.headline3}</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-text-dim mb-12 max-w-2xl mx-auto">
-            {settings.description}
+            {hero.subheadline}
           </p>
           
           <a href="#projects" 
              className="inline-block px-8 py-4 bg-gradient-to-r from-primary to-primary-light rounded-lg
                         hover:from-accent hover:to-accent-glow transition-all duration-300
                         font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-            Explore Work
+            {hero.buttonText}
           </a>
         </div>
       </section>

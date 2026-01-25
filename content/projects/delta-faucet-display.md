@@ -1,11 +1,25 @@
 ---
-title: "Delta Faucet Display System"
-industry: "Home Improvement"
-materials: "Corrugated with digital print, working water demos, LED lighting"
-type: "Retail bay display"
-client: "Delta Faucet"
+title: Delta Faucet Display System
+industry: Home Improvement
+materials: Corrugated with digital print, working water demos, LED lighting
+type: Retail bay display
+client: Delta Faucet
 year: "2023"
 featured: true
+heroImage: /images/delta_pod_11-17_0001_c1_mid_backlit.jpg
+sketches:
+  - image: /images/delta_sketch_review_11-10_page_5.jpg
+  - image: /images/delta_sketch_review_11-10_page_4.jpg
+  - image: /images/delta_sketch_review_11-10_page_3.jpg
+  - image: /images/delta_sketch_review_11-10_page_2.jpg
+  - image: /images/delta_pod_11-17_0000_c1_3q.jpg
+  - image: /images/delta_pod_11-17_0002_c1_mid.jpg
+  - image: /images/delta_pod_11-17_0003_c1_detail.jpg
+  - image: /images/delta_pod_11-17_0004_c2_3q.jpg
+  - image: /images/delta_pod_11-17_0005_c2_mid.jpg
+  - image: /images/delta_pod_11-17_0006_c2_detail.jpg
+  - image: /images/delta_pod_11-17_0007_c3_3q.jpg
+  - image: /images/delta_pod_11-17_0008_c3_mid.jpg
 ---
 
 ## Project Overview

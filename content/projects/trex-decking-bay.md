@@ -15,7 +15,7 @@ sketches:
 ---
 ## Project Overview
 
-An endcap for Trex composite decking displays that is featured on the end of the lumber aisle. Solution needed to showcase multiple product lines, color options, and accessories while educating DIY customers and contractors on the benefits of composite vs. wood decking.
+An endcap for Trex composite decking products that is featured on the end of the lumber aisle. Solution needed to showcase multiple product lines, color options, and accessories while educating DIY customers and contractors on the benefits of composite vs. wood decking.
 
 ## Challenge
 

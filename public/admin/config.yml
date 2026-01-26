@@ -70,7 +70,19 @@ collections:
             summary: "{{fields.title}} - {{fields.category}}"
             fields:
               - {label: "Title", name: "title", widget: "string"}
-              - {label: "Category", name: "category", widget: "select", options: ["retail", "trade show", "product", "signage", "conceptual"]}
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - {label: "Retail - Permanent", value: "retail-permanent"}
+                  - {label: "Retail - Semi-Permanent", value: "retail-semi-permanent"}
+                  - {label: "Retail - Temporary", value: "retail-temporary"}
+                  - {label: "Retail Store Environment", value: "retail-store-environment"}
+                  - {label: "Retail Decor", value: "retail-decor"}
+                  - {label: "Trade Show", value: "trade-show"}
+                  - {label: "Product Design", value: "product"}
+                  - {label: "Signage", value: "signage"}
+                  - {label: "Conceptual", value: "conceptual"}
               - {label: "Image", name: "image", widget: "image"}
       
       - label: "About Page"

@@ -13,6 +13,22 @@ interface RenderingsGalleryProps {
   renderings: Rendering[]
 }
 
+// Format category for display
+function formatCategory(category: string): string {
+  const categoryMap: { [key: string]: string } = {
+    'retail-permanent': 'Retail - Permanent',
+    'retail-semi-permanent': 'Retail - Semi-Permanent',
+    'retail-temporary': 'Retail - Temporary',
+    'retail-store-environment': 'Retail Store Environment',
+    'retail-decor': 'Retail Decor',
+    'trade-show': 'Trade Show',
+    'product': 'Product Design',
+    'signage': 'Signage',
+    'conceptual': 'Conceptual'
+  }
+  return categoryMap[category] || category
+}
+
 function Lightbox({ 
   image, 
   title, 
@@ -100,7 +116,7 @@ export default function RenderingsGallery({ renderings }: RenderingsGalleryProps
                       : 'bg-surface hover:bg-surface/80 text-text-dim hover:text-text-light'
                   }`}
                 >
-                  {category.charAt(0).toUpperCase() + category.slice(1)}
+                  {category === 'all' ? 'All' : formatCategory(category)}
                 </button>
               ))}
             </div>
@@ -129,7 +145,7 @@ export default function RenderingsGallery({ renderings }: RenderingsGalleryProps
                 {/* Title Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                   <h3 className="text-white font-semibold text-lg mb-1">{rendering.title}</h3>
-                  <p className="text-gray-300 text-sm">{rendering.category}</p>
+                  <p className="text-gray-300 text-sm">{formatCategory(rendering.category)}</p>
                 </div>
 
                 {/* Zoom Icon */}

@@ -39,7 +39,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20">
         <div className="max-w-4xl text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-serif font-bold mb-6 leading-[1.1]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-[1.1]">
             {hero.headline1}<br />
             {hero.headline2}<br />
             <span className="text-gradient">{hero.headline3}</span>

@@ -37,10 +37,10 @@ export default function AnimatedBackground() {
     // Create floating geometric shapes
     const createShapes = () => {
       const colors = [
-        'rgba(127, 184, 0, 0.03)', // Your green
-        'rgba(127, 184, 0, 0.05)',
-        'rgba(42, 51, 41, 0.04)',
-        'rgba(163, 217, 0, 0.02)',
+        'rgba(127, 184, 0, 0.15)', // Brighter green - was 0.03
+        'rgba(127, 184, 0, 0.20)', // Brighter green - was 0.05
+        'rgba(163, 217, 0, 0.12)', // Brighter green - was 0.02
+        'rgba(42, 51, 41, 0.10)',  // Slightly brighter - was 0.04
       ]
 
       // Create 5-7 shapes scattered across the viewport
@@ -113,7 +113,7 @@ export default function AnimatedBackground() {
       ]
 
       ctx.strokeStyle = color
-      ctx.lineWidth = 1.5
+      ctx.lineWidth = 2.5  // Was 1.5 - now thicker
       ctx.lineCap = 'round'
 
       edges.forEach(([start, end]) => {
@@ -174,7 +174,7 @@ export default function AnimatedBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 pointer-events-none opacity-60"
+      className="absolute inset-0 pointer-events-none opacity-80"
       style={{ mixBlendMode: 'screen' }}
     />
   )

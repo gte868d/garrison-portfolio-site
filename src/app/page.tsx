@@ -130,17 +130,15 @@ export default function Home() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold mb-8 text-center tracking-tight">
-            The Method: Rocks in a Tumbler
+            {hero.methodologyTitle || 'The Method: Rocks in a Tumbler'}
           </h2>
           
           <div className="space-y-6 text-lg sm:text-xl text-text-dim/80 leading-relaxed text-center max-w-3xl mx-auto">
             <p>
-              For every project, I generate 15-30 rapid concept sketches—not to show off volume, 
-              but because the right solution rarely appears in the first three ideas.
+              {hero.methodologyParagraph1 || 'For every project, I generate 15-30 rapid concept sketches—not to show off volume, but because the right solution rarely appears in the first three ideas.'}
             </p>
             <p>
-              These concepts collide with each other, with client constraints, with manufacturing realities. 
-              The friction reveals what works.
+              {hero.methodologyParagraph2 || 'These concepts collide with each other, with client constraints, with manufacturing realities. The friction reveals what works.'}
             </p>
           </div>
 

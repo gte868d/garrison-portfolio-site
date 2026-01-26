@@ -59,6 +59,9 @@ collections:
           - {label: "Headline Line 3 (Highlighted)", name: "headline3", widget: "string", default: "Solutions that ship."}
           - {label: "Subheadline", name: "subheadline", widget: "text", default: "20 years solving how products meet consumers through systematic design thinking and AI-integrated workflows."}
           - {label: "Button Text", name: "buttonText", widget: "string", default: "Explore Work"}
+          - {label: "Methodology Title", name: "methodologyTitle", widget: "string", default: "The Method: Rocks in a Tumbler"}
+          - {label: "Methodology Paragraph 1", name: "methodologyParagraph1", widget: "text", default: "For every project, I generate 15-30 rapid concept sketches—not to show off volume, but because the right solution rarely appears in the first three ideas."}
+          - {label: "Methodology Paragraph 2", name: "methodologyParagraph2", widget: "text", default: "These concepts collide with each other, with client constraints, with manufacturing realities. The friction reveals what works."}
       
       - label: "Renderings Gallery"
         name: "renderings"

@@ -1,5 +1,6 @@
 import ProjectGrid from '@/components/ProjectGrid'
 import RenderingsGallery from '@/components/RenderingsGallery'
+import AnimatedBackground from '@/components/AnimatedBackground'
 import fs from 'fs'
 import path from 'path'
 
@@ -37,14 +38,14 @@ export default function Home() {
   return (
     <>
       {/* Hero Section - Award-Winning Layout */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-12">
-        {/* Subtle animated background gradient */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        </div>
+      <section className="relative min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-12 overflow-hidden">
+        {/* Animated 3D Background */}
+        <AnimatedBackground />
 
-        <div className="relative max-w-5xl mx-auto text-center py-32 sm:py-40 lg:py-48">
+        {/* Subtle gradient overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background pointer-events-none"></div>
+
+        <div className="relative max-w-5xl mx-auto text-center py-32 sm:py-40 lg:py-48 z-10">
           {/* Headline with perfect spacing */}
           <h1 className="font-serif font-bold mb-8 sm:mb-10 lg:mb-12 leading-[1.05] tracking-tight">
             <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-2 sm:mb-3 animate-fade-in-up">

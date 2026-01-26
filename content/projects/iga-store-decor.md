@@ -3,7 +3,7 @@ title: IGA Store Decor
 industry: Grocery
 materials: Sintra / EPVC, Dibond, Styrene, Acrylic, Wall Decals
 type: Store Decor / Signage
-client: Individual Independently Owned & Operated IGA Stores
+client: Porchlight Studios for IGA
 year: "2019"
 featured: true
 heroImage: /images/screenshot-2026-01-24-at-10.54.57 pm.png

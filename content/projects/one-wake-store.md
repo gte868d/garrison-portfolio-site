@@ -3,7 +3,7 @@ title: One Wake Retail Store Concept
 industry: Retail & Spatial Design
 materials: Environmental graphics, branded fixtures, experiential elements
 type: Store planning & concept development
-client: One Wake
+client: Compass Display for One Wake
 year: "2023"
 featured: true
 heroImage: /images/onewake_wm_318_0005_v1_with_rafts_inscene-copy.jpg

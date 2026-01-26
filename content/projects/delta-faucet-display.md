@@ -3,7 +3,7 @@ title: Delta Faucet Display System
 industry: Home Improvement
 materials: Corrugated with digital print, working water demos, LED lighting
 type: Retail bay display
-client: Delta Faucet
+client: Porchlight Studios for Delta Faucet
 year: "2023"
 featured: true
 heroImage: /images/delta_pod_11-17_0001_c1_mid_backlit.jpg

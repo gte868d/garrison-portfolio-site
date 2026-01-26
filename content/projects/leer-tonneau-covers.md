@@ -3,7 +3,7 @@ title: Leer Tonneau Covers Display
 industry: Automotive Aftermarket
 materials: Vacuum-formed plastic, powder-coated steel, UV-printed graphics
 type: Retail display system
-client: Leer
+client: Crux Retail for Leer
 year: "2023"
 featured: true
 heroImage: /images/img_6361.jpeg

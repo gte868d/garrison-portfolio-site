@@ -3,7 +3,7 @@ title: Trex Decking Bay System
 industry: Home Improvement
 materials: Composite decking samples, powder-coated steel, UV-printed graphics
 type: 9-foot retail bay system
-client: Trex Company
+client: Porchlight Studios for Trex Company
 year: "2024"
 featured: true
 heroImage: /images/trex_sketches_717_0003_v3-copy-5.jpg

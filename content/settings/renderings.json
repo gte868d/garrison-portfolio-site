@@ -1,3 +1,84 @@
 {
-  "renderings": []
+  "renderings": [
+    {
+      "image": "/images/gb_portfolio_2025_page_002.jpg",
+      "title": "Leap Motion Endcap",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_003.jpg",
+      "title": "Leap Motion Countertop",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_010.jpg",
+      "title": "Herradura Lockable Floor Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_019.jpg",
+      "title": "Korbel Floor Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_020.jpg",
+      "title": "Woodford Reserve Floor Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_052.jpg",
+      "title": "One Wake Retail Store",
+      "category": "signage"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_091.jpg",
+      "title": "Sheex Floor Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_101.jpg",
+      "title": "Sheex Store-in-Store Set",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_112.jpg",
+      "title": "OSMO Countertop Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_115.jpg",
+      "title": "Oculus Interactive Display",
+      "category": "retail"
+    },
+    {
+      "title": "Oculus Interactive Display (Exploded View)",
+      "category": "retail",
+      "image": "/images/gb_portfolio_2025_page_119.jpg"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_532.jpg",
+      "title": "TREX Inline Home Depot Lumber Aisle Display",
+      "category": "signage"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_536.jpg",
+      "title": "TREX Pro Display Section",
+      "category": "signage"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_542.jpg",
+      "title": "TREX Inline Set",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_339.jpg",
+      "title": "Lifeproof Aisle",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_630.jpg",
+      "title": "Tagg Pet Tracker Endcap",
+      "category": "retail"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 ---
-title: Trex Decking Bay System
+title: Trex Decking Endcap
 industry: Home Improvement
 materials: Composite decking samples, powder-coated steel, UV-printed graphics
 type: Endcap Display

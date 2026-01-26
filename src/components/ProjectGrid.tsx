@@ -25,6 +25,19 @@ function getProjects(): Project[] {
     }
     
     const filenames = fs.readdirSync(projectsDirectory)
+    
+    // Load project order from settings
+    let projectOrder: string[] = []
+    try {
+      const orderPath = path.join(process.cwd(), 'content/settings/project-order.json')
+      const orderData = fs.readFileSync(orderPath, 'utf8')
+      const orderJson = JSON.parse(orderData)
+      projectOrder = orderJson.order || []
+    } catch (error) {
+      console.log('No project order file found, using default order')
+    }
+    
+    // Load all projects into a map
     const projectMap = new Map<string, Project>()
     
     filenames.forEach((filename) => {
@@ -49,7 +62,14 @@ function getProjects(): Project[] {
       })
     })
     
-    // Return all featured projects
+    // If we have a project order, use it
+    if (projectOrder.length > 0) {
+      return projectOrder
+        .map(slug => projectMap.get(slug))
+        .filter(project => project && project.featured) as Project[]
+    }
+    
+    // Otherwise, show all featured projects
     return Array.from(projectMap.values())
       .filter(project => project.featured)
       .slice(0, 8)

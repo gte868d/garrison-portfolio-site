@@ -3,7 +3,7 @@ title: KORR Cardio Coach
 industry: Medical & Fitness
 materials: Sheet metal, powder-coated steel, acrylic, digital graphics
 type: Product housing & retail display
-client: KORR Medical Technologies
+client: Crux Retail for KORR Medical Technologies
 year: "2024"
 featured: true
 heroImage: /images/screenshot-2026-01-24-at-2.13.07 pm.png

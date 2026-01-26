@@ -60,6 +60,19 @@ collections:
           - {label: "Subheadline", name: "subheadline", widget: "text", default: "20 years solving how products meet consumers through systematic design thinking and AI-integrated workflows."}
           - {label: "Button Text", name: "buttonText", widget: "string", default: "Explore Work"}
       
+      - label: "Renderings Gallery"
+        name: "renderings"
+        file: "content/settings/renderings.json"
+        fields:
+          - label: "Renderings"
+            name: "renderings"
+            widget: "list"
+            summary: "{{fields.title}} - {{fields.category}}"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: ["retail", "trade show", "product", "signage", "conceptual"]}
+              - {label: "Image", name: "image", widget: "image"}
+      
       - label: "About Page"
         name: "about"
         file: "content/settings/about.json"

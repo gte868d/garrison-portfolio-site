@@ -70,13 +70,15 @@ function getProjects(): Project[] {
   }
 }
 
-function ProjectCard({ project }: { project: Project }) {
+
+function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
     <Link 
       href={`/projects/${project.id}`}
-      className="block group"
+      className="block group animate-fade-in-up"
+      style={{ animationDelay: `${index * 0.1}s` }}
     >
-      <div className="relative rounded-2xl overflow-hidden card-hover aspect-[4/5]">
+      <div className="relative rounded-2xl overflow-hidden card-hover aspect-[4/5] transform transition-all duration-700 hover:scale-[1.03] hover:shadow-2xl hover:shadow-accent/20">
         {/* Project Image or Placeholder */}
         {project.heroImage ? (
           <div className="absolute inset-0">
@@ -84,54 +86,48 @@ function ProjectCard({ project }: { project: Project }) {
               src={project.heroImage}
               alt={project.title}
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              className="object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
-            {/* Stronger gradient overlay for better text readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent transition-opacity duration-500 group-hover:from-background/95"></div>
           </div>
         ) : (
-          // Placeholder gradient if no image
+          // Placeholder gradient
           <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/10 flex items-center justify-center">
-            <div className="text-8xl font-bold text-white/5">
+            <div className="text-8xl font-bold text-white/5 transition-transform duration-700 group-hover:scale-110">
               {project.title.charAt(0)}
             </div>
           </div>
         )}
         
-        {/* Info Overlay - Clean, Always Visible */}
-        <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
-          {/* Industry tag at top */}
-          <div className="mb-auto pt-4">
-            <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase bg-accent/20 text-accent backdrop-blur-sm rounded-full">
-              {project.industry}
-            </span>
-          </div>
+        {/* Info Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 p-6 transform transition-all duration-500">
+          <h3 className="text-xl font-serif font-bold mb-2 transform transition-all duration-500 group-hover:translate-y-[-8px] group-hover:text-accent">
+            {project.title}
+          </h3>
           
-          {/* Project info at bottom */}
-          <div className="space-y-3">
-            <h3 className="text-2xl font-serif font-bold leading-tight text-white">
-              {project.title}
-            </h3>
-            
-            <div className="space-y-1.5">
-              <p className="text-sm text-gray-300 leading-relaxed">
-                {project.type}
-              </p>
-              <p className="text-xs text-gray-400 leading-relaxed">
-                {project.materials}
-              </p>
-            </div>
-            
-            {/* View project hint */}
-            <div className="flex items-center gap-2 text-accent text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-              <span>View Project</span>
-              <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+          {/* Expanded info on hover */}
+          <div className="transition-all duration-500 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-40">
+            <div className="glass-morphism rounded-lg p-4 mt-2 space-y-2 text-sm backdrop-blur-xl">
+              <div className="flex justify-between items-center">
+                <span className="text-text-dim">Industry</span>
+                <span className="font-semibold text-text-light">{project.industry}</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-text-dim">Materials</span>
+                <span className="font-semibold text-text-light">{project.materials}</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-text-dim">Type</span>
+                <span className="font-semibold text-text-light">{project.type}</span>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Hover border glow */}
+        <div className="absolute inset-0 border-2 border-accent/0 group-hover:border-accent/30 rounded-2xl transition-all duration-500 pointer-events-none"></div>
       </div>
     </Link>
   )
@@ -150,8 +146,8 @@ export default function ProjectGrid() {
   
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
+      {projects.map((project, index) => (
+        <ProjectCard key={project.id} project={project} index={index} />
       ))}
     </div>
   )

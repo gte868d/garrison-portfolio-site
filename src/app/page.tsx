@@ -1,4 +1,5 @@
 import ProjectGrid from '@/components/ProjectGrid'
+import RenderingsGallery from '@/components/RenderingsGallery'
 import fs from 'fs'
 import path from 'path'
 
@@ -18,8 +19,20 @@ function getHeroContent() {
   }
 }
 
+function getRenderings() {
+  try {
+    const renderingsPath = path.join(process.cwd(), 'content/settings/renderings.json')
+    const renderingsData = fs.readFileSync(renderingsPath, 'utf8')
+    const data = JSON.parse(renderingsData)
+    return data.renderings || []
+  } catch (error) {
+    return []
+  }
+}
+
 export default function Home() {
   const hero = getHeroContent()
+  const renderings = getRenderings()
   
   return (
     <>
@@ -54,13 +67,18 @@ export default function Home() {
             </h2>
             <p className="text-lg sm:text-xl text-text-dim max-w-2xl mx-auto px-4">
               A selection of recent work across retail displays, trade show environments, 
-              and product design. Hover to explore.
+              and product design. Click to explore case studies.
             </p>
           </div>
           
           <ProjectGrid />
         </div>
       </section>
+
+      {/* Renderings Gallery */}
+      {renderings.length > 0 && (
+        <RenderingsGallery renderings={renderings} />
+      )}
 
       {/* Process Teaser */}
       <section className="py-16 sm:py-20 px-4 sm:px-6">

@@ -59,10 +59,6 @@ export default function Navigation({ logo, logoDark, showLogo }: NavigationProps
           <Link href="/about" className="hover:text-accent transition-colors text-base">
             About
           </Link>
-          <Link href="https://askbetter.us" target="_blank" rel="noopener noreferrer" 
-                className="text-accent hover:text-accent-glow transition-colors text-base">
-            AskBetter
-          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -100,15 +96,6 @@ export default function Navigation({ logo, logoDark, showLogo }: NavigationProps
               className="hover:text-accent transition-colors text-lg py-2"
             >
               About
-            </Link>
-            <Link 
-              href="https://askbetter.us" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-accent hover:text-accent-glow transition-colors text-lg py-2"
-            >
-              AskBetter
             </Link>
           </div>
         </div>

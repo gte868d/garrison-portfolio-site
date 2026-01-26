@@ -1,3 +1,34 @@
 {
-  "renderings": []
+  "renderings": [
+    {
+      "image": "/images/gb_portfolio_2025_page_002.jpg",
+      "title": "Leap Motion Endcap",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_003.jpg",
+      "title": "Leap Motion Countertop",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_010.jpg",
+      "title": "Herradura Lockable Floor Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_019.jpg",
+      "title": "Korbel Floor Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_020.jpg",
+      "title": "Woodford Reserve Floor Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_052.jpg",
+      "title": "One Wake Retail Store",
+      "category": "product"
+    }
+  ]
 }

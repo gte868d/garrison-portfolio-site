@@ -28,7 +28,32 @@
     {
       "image": "/images/gb_portfolio_2025_page_052.jpg",
       "title": "One Wake Retail Store",
-      "category": "product"
+      "category": "signage"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_091.jpg",
+      "title": "Sheex Floor Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_101.jpg",
+      "title": "Sheex Store-in-Store Set",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_112.jpg",
+      "title": "OSMO Countertop Display",
+      "category": "retail"
+    },
+    {
+      "image": "/images/gb_portfolio_2025_page_115.jpg",
+      "title": "Oculus Interactive Display",
+      "category": "retail"
+    },
+    {
+      "title": "Oculus Interactive Display (Exploded View)",
+      "category": "retail",
+      "image": "/images/gb_portfolio_2025_page_119.jpg"
     }
   ]
 }

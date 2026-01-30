@@ -18,7 +18,7 @@ export const metadata = {
     siteName: 'Garrison Brooks Portfolio',
     images: [
       {
-        url: '/images/gblogo.png',
+        url: '/images/gblogo_on_black.png',
         width: 1200,
         height: 630,
         alt: 'Garrison Brooks - Industrial Designer',
@@ -29,7 +29,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Garrison Brooks | Industrial Designer',
     description: 'Fast ideation. Deep exploration. Solutions that ship.',
-    images: ['/images/gblogo.png'],
+    images: ['/images/gblogo_on_black.png'],
   },
 }
 
